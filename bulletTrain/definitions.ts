@@ -11,8 +11,7 @@ export default {
             deposit_amount: 'Balance',
             bonus_total: 'Balance',
             yield_total: 'Balance',
-            maturity: 'u32',
-            vault: 'Balance'
+            maturity: 'u32'
         },
         TravelCabinBuyerInfo: {
             buyer: 'Buyer',
@@ -24,8 +23,7 @@ export default {
         MilestoneRewardInfo: {
             token_id: 'CurrencyId',
             deposited: 'Balance',
-            milestones: 'Vec<(Balance, Balance)>',
-            vault: 'Balance'
+            milestones: 'Vec<(Balance, Balance)>'
         },
         DpoState: {
             _enum: [
