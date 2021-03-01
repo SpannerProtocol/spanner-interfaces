@@ -1,8 +1,8 @@
 export default {
     rpc: {
-        pocModule: {
-          getLockDropsOfAccount: {
-            description: 'Get lockdrops of account',
+        bulletTrain: {
+          getTravelCabinsOfAccount: {
+            description: 'Get travel cabins of account',
             params: [
               {
                 name: 'account',
