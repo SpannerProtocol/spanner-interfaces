@@ -76,8 +76,8 @@ export default {
     Referrer: {
       _enum: {
         None: null,
-        MemberOfDpo: 'DpoMemberIndex',
-        External: '(AccountId, DpoMemberIndex)',
+        MemberOfDpo: 'Buyer',
+        External: '(AccountId, Buyer)',
       },
     },
     PaymentType: {
