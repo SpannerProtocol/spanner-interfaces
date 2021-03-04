@@ -30,6 +30,7 @@ export default {
                 'CREATED',
                 'ACTIVE',
                 'FAILED',
+                'RUNNING',
                 'COMPLETED'
             ]
         },
@@ -46,6 +47,14 @@ export default {
                 InvalidBuyer: null
             }
         },
+        DpoRole: {
+            _enum: {
+              Manager: null,
+              UserMember: 'DpoMemberIndex',
+              DpoMember: 'DpoMemberIndex',
+              InvalidRole : null
+            }
+          },
         DpoInfo: {
             index: 'DpoIndex',
             name: 'Text',
@@ -58,7 +67,8 @@ export default {
             commission_rate: 'u32',
             commission_rate_slashed: 'bool',
             empty_seats: 'u8',
-            user_members: 'Vec<(AccountId, DpoMemberIndex)>',
+            fifo: 'Vec<(AccountId, DpoMemberIndex)>',
+            member_count: 'u8',
             vault_deposit: 'Balance',
             vault_withdraw: 'Balance',
             vault_yield: 'Balance',
@@ -87,10 +97,13 @@ export default {
         },
         PaymentType: {
             _enum: [
+                'Deposit',
                 'Bonus',
+                'MilestoneReward',
                 'Yield',
-                'ExcessAmountFromPurchase',
-                'Withdraw'
+                'UnusedFund',
+                'WithdrawOnCompletion',
+                'WithdrawOnFailure'
             ]
         }
     }
