@@ -4,6 +4,13 @@ Refer to https://polkadot.js.org/docs/api/examples/promise/typegen for more info
 
 ```bash
 git submodule add `this repo`
+git submodule update --init --recursive
+#to update to latest commit
+cd spanner-interfaces
+git pull origin master
+
+#to generate metadata.json
+ curl -H "Content-Type: application/json" -d '{"id":"1", "jsonrpc":"2.0", "method": "state_getMetadata", "params":[]}' http://localhost:9933 > metadata.json
 
 Add to tsconfig.json
 "paths": {
