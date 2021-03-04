@@ -19,6 +19,5 @@ export default {
       },
     },
     CurrencyIdOf: 'CurrencyId',
-    TradingPair: '(CurrencyId, CurrencyId)',
   }
 }
