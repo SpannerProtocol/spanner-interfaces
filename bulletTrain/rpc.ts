@@ -29,7 +29,7 @@ export default {
             isOptional: true,
           },
         ],
-        type: 'Vec<(DpoIndex, DpoMemberIndex)>',
+        type: 'Vec<DpoIndex>',
       },
     },
   },
