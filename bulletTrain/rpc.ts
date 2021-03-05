@@ -14,7 +14,7 @@ export default {
             isOptional: true,
           },
         ],
-        type: 'Vec<(LockDropIndex, LockDropInventoryIndex)>',
+        type: 'Vec<(TravelCabinIndex, TravelCabinInventoryIndex)>',
       },
       getDposOfAccount: {
         description: 'Get dpos of account',
