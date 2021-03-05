@@ -16,7 +16,6 @@ export default {
         ],
         type: 'Vec<(LockDropIndex, LockDropInventoryIndex)>',
       },
-<<<<<<< HEAD
       getDposOfAccount: {
         description: 'Get dpos of account',
         params: [
@@ -35,8 +34,3 @@ export default {
     },
   },
 }
-=======
-    },
-  },
-};
->>>>>>> 37895a44f8b0b2efdf3200e67a039011e16f1dfe
