@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/camelcase */
 export default {
   types: {
     TravelCabinIndex: 'u32',
@@ -35,7 +36,7 @@ export default {
     },
     Buyer: {
       _enum: {
-        Dpo: '(AccountId, DpoIndex)',
+        Dpo: 'DpoIndex',
         Passenger: 'AccountId',
         InvalidBuyer: null,
       },
