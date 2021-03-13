@@ -54,7 +54,7 @@ export default {
       commission_rate: 'u32',
       commission_rate_slashed: 'bool',
       empty_seats: 'u8',
-      fifo: 'Vec<AccountId>',
+      fifo: 'Vec<Buyer>',
       vault_deposit: 'Balance',
       vault_withdraw: 'Balance',
       vault_yield: 'Balance',
