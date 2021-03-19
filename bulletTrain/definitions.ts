@@ -11,7 +11,7 @@ export default {
       deposit_amount: 'Balance',
       bonus_total: 'Balance',
       yield_total: 'Balance',
-      maturity: 'u32',
+      maturity: 'BlockNumber',
     },
     TravelCabinBuyerInfo: {
       buyer: 'Buyer',
@@ -47,6 +47,7 @@ export default {
       token_id: 'CurrencyId',
       manager: 'AccountId',
       target: 'Target',
+      target_maturity: 'BlockNumber',
       target_amount: 'Balance',
       target_yield_estimate: 'Balance',
       target_bonus_estimate: 'Balance',
