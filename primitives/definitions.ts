@@ -5,12 +5,9 @@ export default {
     TokenSymbol: {
       _enum: ['BOLT',
         'WUSD',
-        'WBTC',
         'BBOT',
-        'DOGE',
         'NCAT',
-        'PLKT',
-        'ZERO'],
+        'PLKT'],
     },
     CurrencyId: {
       _enum: {
