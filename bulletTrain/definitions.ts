@@ -5,6 +5,7 @@ export default {
     TravelCabinInventoryIndex: 'u16',
     DpoIndex: 'u32',
     TravelCabinInfo: {
+      name: 'Text',
       creator: 'AccountId',
       token_id: 'CurrencyId',
       index: 'TravelCabinIndex',
@@ -52,8 +53,6 @@ export default {
       target_yield_estimate: 'Balance',
       target_bonus_estimate: 'Balance',
       amount_per_seat: 'Balance',
-      commission_rate: 'u32',
-      commission_rate_slashed: 'bool',
       empty_seats: 'u8',
       fifo: 'Vec<Buyer>',
       vault_deposit: 'Balance',
@@ -69,6 +68,9 @@ export default {
       state: 'DpoState',
       referrer: 'Option<AccountId>',
       fare_withdrawn: 'bool',
+      direct_referral_rate: 'u32',
+      fee: 'u32',
+      fee_slashed: 'bool',
     },
     DpoMemberInfo: {
       buyer: 'Buyer',
