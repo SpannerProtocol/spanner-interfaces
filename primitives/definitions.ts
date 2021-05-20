@@ -16,5 +16,10 @@ export default {
       },
     },
     CurrencyIdOf: 'CurrencyId',
+    OrmlAccountData: {
+      "free": "Balance",
+      "frozen": "Balance",
+      "reserved": "Balance"
+    }
   }
 }
